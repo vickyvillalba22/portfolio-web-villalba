@@ -1,0 +1,132 @@
+@font-face {
+    font-family: "creatoMedium";
+    src: url('/assets/creato-display/CreatoDisplay-Medium.otf') format("opentype");
+}
+
+@font-face {
+    font-family: "creatoRegular";
+    src: url('/assets/creato-display/CreatoDisplay-Regular.otf') format("opentype");
+}
+
+@font-face {
+    font-family: "creatoBold";
+    src: url('/assets/creato-display/CreatoDisplay-Bold.otf') format("opentype");
+}
+
+.violeta{
+    color: #8A38F5;
+}
+.casinegro{
+    color: #262626;
+}
+.fondo-crema{
+    background-color: #FFFCE5;
+}
+
+h1{
+    font-family: "creatoRegular";
+    font-size: 60px;
+}
+h2{
+    font-family: "creatoRegular";
+    font-size: 40px;
+
+    margin-left: 3em;
+}
+h3{
+    font-family: "creatoRegular";
+    font-size: 20px;
+    font-weight: 200;
+}
+p{
+    font-family: "creatoRegular";
+    font-size: 18px;
+}
+
+.parrafoPrinci{
+    font-family: "creatoRegular";
+    font-size: 22px;
+    text-align: left;
+}
+
+#header1{
+    margin-top: 100px;
+}
+
+.cajita-header{
+    width: 100%;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 10px;
+}
+
+.item-header{
+    font-family: "creatoRegular";
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.borde-bottom{
+    border-bottom: 1px solid black;
+}
+
+i{
+    font-size: 30px;
+}
+
+/*ABOUT*/
+
+#about2{
+    margin-top: 100px;
+}
+#about3{
+    left: 0;
+}
+
+
+#about {
+    position: relative;
+    z-index: 2;
+}
+
+#about::before {
+    content: "";
+    position: absolute;
+    left: 0%;
+    top: 20%;
+    width: 40%;
+    height: 55%;
+    background-color: #262626;
+    z-index: 0;
+}
+
+#cajaAbouts {
+    position: absolute;
+    top: 10%;
+    z-index: 3;
+}
+
+#about::after {
+    content: "";
+    position: absolute;
+    right: 0%;
+    top: 25%;
+    width: 30%;
+    height: 40%;
+    background-color: #262626;
+    z-index: 0;
+}
+
+#sliderCategorias{
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.categoria{
+    width: 30%;
+    height: 10vh;
+    border-radius: 10px;
+    background-color: #262626;
+}
