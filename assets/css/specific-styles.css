@@ -23,6 +23,10 @@
     background-color: #FFFCE5;
 }
 
+.fuente{
+    font-family: "creatoRegular";
+}
+
 h1{
     font-family: "creatoRegular";
     font-size: 60px;
@@ -38,15 +42,28 @@ h3{
     font-size: 20px;
     font-weight: 200;
 }
+h4{
+    font-size: 18px;
+    font-weight: 400;
+}
 p{
     font-family: "creatoRegular";
     font-size: 18px;
+}
+span{
+    font-family: "creatoRegular";
+    font-size: 12px;
+    font-weight: 600;
+    color: gray;
 }
 
 .parrafoPrinci{
     font-family: "creatoRegular";
     font-size: 22px;
     text-align: left;
+}
+.titExp{
+    font-weight: 600;
 }
 
 #header1{
@@ -129,4 +146,38 @@ i{
     height: 10vh;
     border-radius: 10px;
     background-color: #262626;
+}
+
+/*EXPIERENCE*/
+
+#linea::before{
+    content: "";
+    position: absolute;
+    left: 20%;
+    top: 0;
+    width: 1.5px;
+    height: 100px;
+    background-color: #262626;
+}
+
+#linea::after{
+    content: "";
+    position: absolute;
+    left: 19.6%;
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    background-color: #8A38F5;
+}
+
+/*SKILLS*/
+
+.boxSkill{
+    gap: 30px;
+}
+
+/*FOOTER*/
+
+.caja-footer{
+    gap: 20px;
 }
