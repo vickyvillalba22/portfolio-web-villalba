@@ -54,6 +54,9 @@
 .df{
     display: flex;
 }
+.fEnd{
+    justify-content: end;
+}
 .columna{
     flex-direction: column;
 }
@@ -91,6 +94,9 @@
 }
 .h90{
     height: 90%;
+}
+.h88{
+    height: 88%;
 }
 .h50{
     height: 50%;

@@ -13,11 +13,12 @@ const header1 = document.getElementById("header1");
 function llenarHeader1(){
 
     for (let i = 0; i < opcionesHeader.length; i++) {
-        let cont = document.createElement("div");
+        let cont = document.createElement("a");
+        cont.setAttribute("href", opcionesHeader[i].enlace);
         cont.classList.add("borde-bottom", "df", "cajita-header");
         cont.innerHTML = `
-            <i class="bi bi-arrow-right"></i>
-            <a href="${opcionesHeader[i].enlace}"><h4 class="item-header negro">${opcionesHeader[i].nombre}</h4></a>
+            <i class="bi bi-arrow-right negro"></i>
+            <h4 class="item-header negro">${opcionesHeader[i].nombre}</h4>
         `;
 
         header1.appendChild(cont);
