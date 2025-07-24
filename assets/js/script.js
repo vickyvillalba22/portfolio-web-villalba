@@ -29,8 +29,6 @@ llenarHeader1()
 
 /*HEADER 2*/
 
-//armar un intersection observer para que cuando aparezca el footer la flechita de volver se ponga blanca
-
 const header2 = document.querySelector("header");
 const volver = document.getElementById("volver");
 
@@ -45,8 +43,6 @@ window.addEventListener("scroll", () => {
     }
 
 });
-
-
 
 /*PROJECTS*/
 

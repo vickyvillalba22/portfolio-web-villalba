@@ -1,0 +1,100 @@
+{
+  "categorias": [
+    {
+      "id": "web-development",
+      "nombre": "Web Development",
+      "proyectos": [
+        {
+          "nombre": "Portfolio",
+          "descripcion": "Sitio web personal para mostrar trabajos y habilidades.",
+          "enlace": "https://tusitio.com/portfolio"
+        },
+        {
+          "nombre": "E-commerce",
+          "descripcion": "Tienda online con carrito y pagos integrados.",
+          "enlace": "https://tusitio.com/ecommerce"
+        }
+      ]
+    },
+    {
+      "id": "branding",
+      "nombre": "Branding",
+      "proyectos": [
+        {
+          "nombre": "Logo Design",
+          "descripcion": "Diseño de logotipo para marca moderna.",
+          "enlace": "https://tusitio.com/logo-design"
+        },
+        {
+          "nombre": "Brand Manual",
+          "descripcion": "Manual de identidad visual para empresa.",
+          "enlace": "https://tusitio.com/brand-manual"
+        }
+      ]
+    },
+    {
+      "id": "audiovisual-production",
+      "nombre": "Audiovisual Production",
+      "proyectos": [
+        {
+          "nombre": "Short Film",
+          "descripcion": "Cortometraje creativo para festival local.",
+          "enlace": "https://tusitio.com/short-film"
+        },
+        {
+          "nombre": "Commercial Video",
+          "descripcion": "Video comercial para campaña publicitaria.",
+          "enlace": "https://tusitio.com/commercial-video"
+        }
+      ]
+    },
+    {
+      "id": "graphic-design",
+      "nombre": "Graphic Design",
+      "proyectos": [
+        {
+          "nombre": "Poster",
+          "descripcion": "Diseño de póster para evento cultural.",
+          "enlace": "https://tusitio.com/poster"
+        },
+        {
+          "nombre": "Brochure",
+          "descripcion": "Folleto informativo para empresa.",
+          "enlace": "https://tusitio.com/brochure"
+        }
+      ]
+    },
+    {
+      "id": "ux-ui-design",
+      "nombre": "UX/UI Design",
+      "proyectos": [
+        {
+          "nombre": "App Prototype",
+          "descripcion": "Prototipo interactivo para aplicación móvil.",
+          "enlace": "https://tusitio.com/app-prototype"
+        },
+        {
+          "nombre": "Website Redesign",
+          "descripcion": "Rediseño de sitio web para mejor experiencia de usuario.",
+          "enlace": "https://tusitio.com/website-redesign"
+        }
+      ]
+    },
+    {
+      "id": "2d-animation",
+      "nombre": "2D Animation",
+      "proyectos": [
+        {
+          "nombre": "Animated Explainer",
+          "descripcion": "Video animado explicativo para producto digital.",
+          "enlace": "https://tusitio.com/animated-explainer"
+        },
+        {
+          "nombre": "Character Animation",
+          "descripcion": "Animación de personaje para cortometraje.",
+          "enlace": "https://tusitio.com/character-animation"
+        }
+      ]
+    }
+  ]
+}
