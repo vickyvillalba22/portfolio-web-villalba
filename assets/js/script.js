@@ -27,6 +27,27 @@ function llenarHeader1(){
 
 llenarHeader1()
 
+/*HEADER 2*/
+
+//armar un intersection observer para que cuando aparezca el footer la flechita de volver se ponga blanca
+
+const header2 = document.querySelector("header");
+const volver = document.getElementById("volver");
+
+window.addEventListener("scroll", () => {
+
+    if (window.scrollY > 300) {
+        header2.classList.remove("invisible");
+        volver.classList.remove("invisible");
+    } else {
+        header2.classList.add("invisible");
+        volver.classList.add("invisible");
+    }
+
+});
+
+
+
 /*PROJECTS*/
 
 const categorias = [

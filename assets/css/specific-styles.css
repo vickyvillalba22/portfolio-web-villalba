@@ -70,6 +70,16 @@ span{
     font-weight: 600;
 }
 
+ul{
+    list-style: none;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    z-index: 4;
+}
+
 #header1{
     margin-top: 100px;
 }
@@ -95,6 +105,14 @@ span{
 
 i{
     font-size: 30px;
+}
+
+#volver{
+    position: fixed;
+    bottom: 20px;
+    z-index: 4;
+    font-size: 40px;
+    color: black;
 }
 
 /*ABOUT*/
@@ -181,6 +199,10 @@ i{
 }
 
 /*FOOTER*/
+
+footer{
+    margin-top: 7em;
+}
 
 .caja-footer{
     gap: 20px;
