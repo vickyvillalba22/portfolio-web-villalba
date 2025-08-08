@@ -1,8 +1,9 @@
 {
   "categorias": [
     {
-      "id": "web-development",
+      "id": "web",
       "nombre": "Web Development",
+      "descripcion": "Creación y optimización de sitios y aplicaciones web. Incluye desde páginas personales hasta plataformas complejas.",
       "proyectos": [
         {
           "nombre": "Portfolio",
@@ -19,6 +20,7 @@
     {
       "id": "branding",
       "nombre": "Branding",
+      "descripcion": "Construcción de identidad visual y conceptual para marcas y profesionales.",
       "proyectos": [
         {
           "nombre": "Logo Design",
@@ -33,8 +35,9 @@
       ]
     },
     {
-      "id": "audiovisual-production",
+      "id": "audiovisual",
       "nombre": "Audiovisual Production",
+      "descripcion": "Producción y edición de contenidos en video. Ideal para proyectos creativos, publicitarios o narrativos.",
       "proyectos": [
         {
           "nombre": "Short Film",
@@ -49,8 +52,9 @@
       ]
     },
     {
-      "id": "graphic-design",
+      "id": "graphic",
       "nombre": "Graphic Design",
+      "descripcion": "Diseño visual para comunicación efectiva. Incluye materiales impresos y digitales para todo tipo de proyectos.",
       "proyectos": [
         {
           "nombre": "Poster",
@@ -65,8 +69,9 @@
       ]
     },
     {
-      "id": "ux-ui-design",
+      "id": "uxui",
       "nombre": "UX/UI Design",
+      "descripcion": "Diseño de experiencias digitales intuitivas y atractivas. Incluye investigación, prototipado y mejoras visuales.",
       "proyectos": [
         {
           "nombre": "App Prototype",
@@ -81,8 +86,9 @@
       ]
     },
     {
-      "id": "2d-animation",
-      "nombre": "2D Animation",
+      "id": "motion",
+      "nombre": "Motion Graphics",
+      "descripcion": "Animaciones digitales para comunicar ideas de forma dinámica. Perfecto para videos explicativos y branding animado.",
       "proyectos": [
         {
           "nombre": "Animated Explainer",
@@ -98,3 +104,4 @@
     }
   ]
 }
+

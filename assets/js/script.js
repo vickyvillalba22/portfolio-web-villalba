@@ -49,45 +49,33 @@ window.addEventListener("scroll", () => {
 const categorias = [
     {
         nombre: "Web Development",
-        proyectos: [
-            { nombre: "Portfolio", enlace: "" },
-            { nombre: "E-commerce", enlace: "https://example.com/e-commerce" }
-        ]
+        id: "web",
+        imagen: ""
     },
     {
         nombre: "Branding",
-        proyectos: [
-            { nombre: "Logo Design", enlace: "" },
-            { nombre: "Brand Manual", enlace: "" }
-        ]
+        id: "branding",
+        imagen: ""
     },
     {
         nombre: "Audiovisual Production",
-        proyectos: [
-            { nombre: "Short Film", enlace: "" },
-            { nombre: "Commercial Video", enlace: "" }
-        ]
+        id: "audiovisual",
+        imagen: ""
     },
     {
         nombre: "Graphic Design",
-        proyectos: [
-            { nombre: "Poster", enlace: "" },
-            { nombre: "Brochure", enlace: "" }
-        ]
+        id: "graphic",
+        imagen: ""
     },
     {
         nombre: "UX/UI Design",
-        proyectos: [
-            { nombre: "App Prototype", enlace: "" },
-            { nombre: "Website Redesign", enlace: "" }
-        ]
+        id: "uxui",
+        imagen: ""
     },
     {
-        nombre: "2D Animation",
-        proyectos: [
-            { nombre: "Animated Explainer", enlace: "" },
-            { nombre: "Character Animation", enlace: "" }
-        ]
+        nombre: "Motion Graphics",
+        id: "motion",
+        imagen: ""
     }
 ]
 
@@ -95,8 +83,10 @@ function armarCategorias(){
 
     for(let i=0; i<categorias.length; i++){
 
-        let contenedor = document.createElement("div");
+        let contenedor = document.createElement("a");
         contenedor.classList.add("categoria", "df", "centerX", "centerY");
+        contenedor.setAttribute("href", `projects.html?id=${categorias[i].id}`)
+        contenedor.setAttribute("target", "_blank");
 
         let titulo = document.createElement("h3");
         titulo.classList.add("blanco");
@@ -109,6 +99,7 @@ function armarCategorias(){
 }
 
 armarCategorias();
+
 
 /*SKILLS*/
 
@@ -195,18 +186,63 @@ const hardSkills = [
 
 const cajaHard = document.getElementById("hardSkills");
 
+const toolsBox = document.getElementById("desplegable")
+
 function llenarHard(){
 
         for (let i = 0; i < hardSkills.length; i++) {
                 
             let cont = document.createElement("div");
             cont.classList.add("borde-bottom", "df", "cajita-header");
+            
             cont.innerHTML = `
                 <i class="bi bi-arrow-right"></i>
                 <h4 class="item-header negro">${hardSkills[i].nombre}</h4>
             `;
 
             cajaHard.appendChild(cont);
+
+            let tools = hardSkills[i].herramientas
+            //console.log(tools);
+            
+            cont.addEventListener("mouseenter", ()=>{
+                showHerramientas(tools)
+            })
+            cont.addEventListener("mouseleave", ()=>{
+                hideHerramientas()
+            })
+        }
+
+        function showHerramientas(tools) {
+
+            toolsBox.innerHTML = ""
+            console.log(tools);
+            
+            
+            for (let i=0; i<tools.length; i++){
+
+                let cont = document.createElement("div")
+
+                let dots = document.createElement("div")
+                
+
+                cont.innerHTML = `
+                    <h4>${tools[i].nombre}</h4>
+                    <div id="bolibox">Nivel</div>
+                `
+                toolsBox.appendChild(cont)
+
+
+            }
+            
+
+            toolsBox.classList.remove("invisible")
+
+        }
+
+        function hideHerramientas (){
+            toolsBox.innerHTML = ""
+            toolsBox.classList.add("invisible")
         }
 
 }
