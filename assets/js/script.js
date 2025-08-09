@@ -18,7 +18,7 @@ function llenarHeader1(){
         cont.classList.add("borde-bottom", "df", "cajita-header");
         cont.innerHTML = `
             <i class="bi bi-arrow-right negro"></i>
-            <h4 class="item-header negro">${opcionesHeader[i].nombre}</h4>
+            <h4 class="item-header negro df centerY">${opcionesHeader[i].nombre}</h4>
         `;
 
         header1.appendChild(cont);
@@ -191,15 +191,19 @@ function llenarHard(){
         for (let i = 0; i < hardSkills.length; i++) {
                 
             let cont = document.createElement("div");
-            cont.classList.add("borde-bottom", "df", "cajita-header");
+            cont.classList.add("df","cajita-header", "columna");
             
             cont.innerHTML = `
-                <i class="bi bi-arrow-right"></i>
-                <h4 class="item-header negro">${hardSkills[i].nombre}</h4>
+                <div class="df w100 spaceb">
+                    <i class="bi bi-arrow-right"></i>
+                    <h4 class="item-header w90 df centerY">${hardSkills[i].nombre}</h4>
+                </div>
+                
             `;
 
             const toolsBox = document.createElement("div");
-            toolsBox.classList.add("invisible")
+            toolsBox.classList.add("fondoOscuro", "blanco", "df", "columna", "centerY", "toolBox")
+
             cont.appendChild(toolsBox);
 
             cajaHard.appendChild(cont);
@@ -207,9 +211,11 @@ function llenarHard(){
             let tools = hardSkills[i].herramientas
             
             cont.addEventListener("mouseenter", ()=>{
+                cont.classList.add("fondoOscuro", "blanco")
                 showHerramientas(tools, toolsBox)
             })
             cont.addEventListener("mouseleave", ()=>{
+                cont.classList.remove("fondoOscuro", "blanco")
                 hideHerramientas(toolsBox)
             })
         }
@@ -221,6 +227,7 @@ function llenarHard(){
             for (let i=0; i<tools.length; i++){
 
                 let cont = document.createElement("div")
+                cont.classList.add("df", "spaceb", "w90", "centerY")
 
                 let dots = document.createElement("div")
 
