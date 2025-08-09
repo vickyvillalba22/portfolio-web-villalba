@@ -186,8 +186,6 @@ const hardSkills = [
 
 const cajaHard = document.getElementById("hardSkills");
 
-const toolsBox = document.getElementById("desplegable")
-
 function llenarHard(){
 
         for (let i = 0; i < hardSkills.length; i++) {
@@ -200,38 +198,57 @@ function llenarHard(){
                 <h4 class="item-header negro">${hardSkills[i].nombre}</h4>
             `;
 
+            const toolsBox = document.createElement("div");
+            toolsBox.classList.add("invisible")
+            cont.appendChild(toolsBox);
+
             cajaHard.appendChild(cont);
 
             let tools = hardSkills[i].herramientas
-            //console.log(tools);
             
             cont.addEventListener("mouseenter", ()=>{
-                showHerramientas(tools)
+                showHerramientas(tools, toolsBox)
             })
             cont.addEventListener("mouseleave", ()=>{
-                hideHerramientas()
+                hideHerramientas(toolsBox)
             })
         }
 
-        function showHerramientas(tools) {
+        function showHerramientas(tools, toolsBox) {
 
             toolsBox.innerHTML = ""
-            console.log(tools);
-            
             
             for (let i=0; i<tools.length; i++){
 
                 let cont = document.createElement("div")
 
                 let dots = document.createElement("div")
-                
+
+                let nivel = tools[i].nivel
+
+                //armar los puntos
+                for (let j=1; j<6; j++){
+
+                    let dot = document.createElement("i")
+                    dot.classList.add("bi", "bi-dot")
+
+                    if (j <= nivel) {
+                        dot.classList.add("violeta");
+                    } else {
+                        dot.classList.add("grisClaro");
+                    }
+
+                    dots.appendChild(dot)
+
+                }
 
                 cont.innerHTML = `
                     <h4>${tools[i].nombre}</h4>
-                    <div id="bolibox">Nivel</div>
                 `
+                //agrego los puntos de cada tool
+                cont.appendChild(dots)
+                
                 toolsBox.appendChild(cont)
-
 
             }
             
@@ -240,7 +257,7 @@ function llenarHard(){
 
         }
 
-        function hideHerramientas (){
+        function hideHerramientas (toolsBox){
             toolsBox.innerHTML = ""
             toolsBox.classList.add("invisible")
         }
